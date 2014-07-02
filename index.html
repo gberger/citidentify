@@ -6,11 +6,149 @@
 </head>
 <body>
 <h2>What city is this?</h2>
-<img src="http://maps.googleapis.com/maps/api/staticmap?key=AIzaSyDjxndpPzjINx2A2fYB2tECl1OkBLjfqAM&style=feature:all|element:labels|visibility:off&&center=40.714728,-73.998672&zoom=14&size=400x400"/>
-<ul>
-  <li>New York</li>
-  <li>Boston</li>
-  <li>London</li>
+
+<ul class="choices">
+  <li id="choice-1" class="choice"></li>
+  <li id="choice-2" class="choice"></li>
+  <li id="choice-3" class="choice"></li>
 </ul>
+
+<p><span class="correct">0</span>/<span class="total">0</span></p>
+
+<img id="map-img" src="blank.gif"/>
+
+<script>
+var cities = [
+  "New York, N.Y.",
+  "Los Angeles, Calif.",
+  "Chicago, Ill.",
+  "Houston, Tex.",
+  "Philadelphia, Pa.",
+  "Phoenix, Ariz.",
+  "San Antonio, Tex.",
+  "San Diego, Calif.",
+  "Dallas, Tex.",
+  "San Jose, Calif.",
+  "Austin, Tex.",
+  "Jacksonville, Fla.",
+  "Indianapolis, Ind.",
+  "San Francisco, Calif.",
+  "Columbus, Ohio",
+  "Fort Worth, Tex.",
+  "Charlotte, N.C.",
+  "Detroit, Mich.",
+  "El Paso, Tex.",
+  "Memphis, Tenn.",
+  "Boston, Mass.",
+  "Seattle, Wash.",
+  "Denver, Colo.",
+  "Washington, DC",
+  "Nashville-Davidson, Tenn.1",
+  "Baltimore, Md.",
+  "Louisville-Jefferson County, Ky.2",
+  "Portland, Ore.",
+  "Oklahoma City, Okla.",
+  "Milwaukee, Wis.",
+  "Las Vegas, Nev.",
+  "Albuquerque, N.M.",
+  "Tucson, Ariz.",
+  "Fresno, Calif.",
+  "Sacramento, Calif.",
+  "Long Beach, Calif.",
+  "Kansas City, Mo.",
+  "Mesa, Ariz.",
+  "Virginia Beach, Va.",
+  "Atlanta, Ga.",
+  "Colorado Springs, Colo.",
+  "Raleigh, N.C.",
+  "Omaha, Nebr.",
+  "Miami, Fla.",
+  "Oakland, Calif.",
+  "Tulsa, Okla.",
+  "Minneapolis, Minn.",
+  "Cleveland, Ohio",
+  "Wichita, Kans.",
+  "Arlington, Tex."
+]
+</script>
+
+<script src="lodash.min.js"></script>
+<script src="jquery.min.js"></script>
+<script src="rx.lite.min.js"></script>
+<script>
+  function shuffle(array) {
+    var arr = _.clone(array);
+    var currentIndex = arr.length;
+    var randomIndex;
+    var tmp;
+
+    while (0 !== currentIndex) {
+      randomIndex = Math.floor(Math.random() * currentIndex);
+      currentIndex -= 1;
+
+      tmp = arr[currentIndex];
+      arr[currentIndex] = arr[randomIndex];
+      arr[randomIndex] = tmp;
+    }
+
+    return arr;
+  }
+
+  var sample = function(arr, n) {
+    if(isNaN(n)){
+      n = 1;
+    }
+    var shuffled = shuffle(arr);
+    return n === 1 ? shuffled[0] : shuffled.slice(0, n);
+  };
+
+  var buildUrl = function(city) {
+    return "http://maps.googleapis.com/maps/api/staticmap?key=AIzaSyDjxndpPzjINx2A2fYB2tECl1OkBLjfqAM&style=feature:all|element:labels|visibility:off&zoom=13&size=600x600&center=" + city;
+  }
+</script>
+<script>
+  var $correct = $('.correct');
+  var $total = $('.total');
+  var $choices = $('.choice');
+  var $choice1 = $('#choice-1');
+  var $choice2 = $('#choice-2');
+  var $choice3 = $('#choice-3');
+  var $mapImg = $('#map-img');
+
+  var resultStream = Rx.Observable.fromEvent($choices, 'click')
+    .map(function(e) {
+      var guess = ($(e.target).data('city'));
+      var actual = ($mapImg.data('city'));
+      return guess === actual;
+    });
+
+  var correctStream = resultStream.scan(0, function(acc, x) {
+    return acc + (x ? 1 : 0);
+  });
+  correctStream.subscribe(function(correct) {
+    $correct.text(correct);
+  });
+
+  totalStream = resultStream.scan(0, function(acc) {
+    return acc + 1;
+  });
+  totalStream.subscribe(function(total) {
+    $total.text(total);
+  });
+
+  var refreshStream = Rx.Observable.return('startup').merge(resultStream);
+
+  refreshStream.subscribe(function(){
+    var possible = sample(cities, 3);
+    var chosen = sample(possible);
+    $choice1.text(possible[0]).data('city', possible[0]);
+    $choice2.text(possible[1]).data('city', possible[1]);
+    $choice3.text(possible[2]).data('city', possible[2]);
+    $mapImg.attr('src', 'blank.gif').attr('src', buildUrl(chosen)).data('city', chosen);
+  });
+
+
+</script>
+
 </body>
 </html>
