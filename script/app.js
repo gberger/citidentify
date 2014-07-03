@@ -63,6 +63,8 @@
   /* RX.JS
    *******/
 
+  var dataset = new Rx.BehaviorSubject(cities);
+
   var resultStream = Rx.Observable.fromEvent($buttons, 'click')
     .map(function (e) {
       var guess = $(e.target).data('city-id');
@@ -91,7 +93,6 @@
   });
 
   resultStream.subscribe(function (result) {
-    console.log(result);
     $buttons.attr('disabled', true);
 
     if (result.correctness) {
@@ -118,11 +119,8 @@
     }, 0);
   });
 
-
-
   /* INIT */
-  var dataset = new Rx.BehaviorSubject(cities);
-
+  // TODO cleanup.
   var datasetStream = Rx.Observable.fromEvent($datasets, 'click')
     .map(function(e) {
       return $(e.target).data('dataset');
@@ -136,7 +134,7 @@
           return city.country === "BRA";
         });
       }
-    })
+    });
 
   datasetStream.subscribe(function(set) {
     dataset.onNext(set);
@@ -145,6 +143,7 @@
   datasetStream.subscribe(function() {
     $init.hide();
     $game.show();
+    // TODO is there a better way?
     $refreshButton.click();
   });
 

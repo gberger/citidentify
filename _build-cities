@@ -5,8 +5,13 @@ require 'securerandom'
 require 'open-uri'
 require 'uri'
 
+unless ENV['KEY'] != nil
+  puts "Set the 'KEY' env var! https://console.developers.google.com"
+  exit
+end
+
 def url_for(city)
-  url = "http://maps.googleapis.com/maps/api/staticmap?style=feature:all%7Celement:labels%7Cvisibility:off&zoom=13&size=600x600&center=#{URI.escape city}"
+  url = "http://maps.googleapis.com/maps/api/staticmap?key=#{ENV['KEY']}&style=feature:all%7Celement:labels%7Cvisibility:off&zoom=13&size=600x600&center=#{URI.escape city}"
 end
 
 cities = JSON.parse(File.open("_includes/cities.json").read)

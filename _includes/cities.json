@@ -248,5 +248,255 @@
     "name": "Arlington, Tex.",
     "country": "USA",
     "id": "fcb06a8e-ad6b-413d-adb0-c3dac0416965"
+  },
+  {
+    "name": "São Paulo, SP",
+    "country": "BRA",
+    "id": "e4c20d69-13ef-4cdb-a3bf-c7ade0220492"
+  },
+  {
+    "name": "Rio de Janeiro, RJ",
+    "country": "BRA",
+    "id": "d05c0f51-3738-4332-9715-f7b6f93fff95"
+  },
+  {
+    "name": "Salvador, BA",
+    "country": "BRA",
+    "id": "93ef8872-22e8-4537-b594-40377bd1198a"
+  },
+  {
+    "name": "Brasília, DF",
+    "country": "BRA",
+    "id": "0d7f8b55-1527-4b04-a2ef-a9eb81acea13"
+  },
+  {
+    "name": "Fortaleza, CE",
+    "country": "BRA",
+    "id": "7657b37d-ea47-47c4-9dd2-2126e69d5a02"
+  },
+  {
+    "name": "Belo Horizonte, MG",
+    "country": "BRA",
+    "id": "34b2cfe5-0500-4431-b065-25c267ec6cbe"
+  },
+  {
+    "name": "Manaus, AM",
+    "country": "BRA",
+    "id": "f7d96656-b710-44c3-aca8-d866270597c5"
+  },
+  {
+    "name": "Curitiba, PR",
+    "country": "BRA",
+    "id": "6557adaf-b4ce-45d7-9ffb-a848908874c4"
+  },
+  {
+    "name": "Recife, PE",
+    "country": "BRA",
+    "id": "975a2f07-0088-4484-8e37-2694ad864cda"
+  },
+  {
+    "name": "Porto Alegre, PS",
+    "country": "BRA",
+    "id": "d2db3c1e-14d3-49e6-bd72-4200b550cea8"
+  },
+  {
+    "name": "Belém, PA",
+    "country": "BRA",
+    "id": "681c9442-954c-4e84-bd07-a4cb70d78679"
+  },
+  {
+    "name": "Goiânia, GO",
+    "country": "BRA",
+    "id": "71d26525-06ad-44aa-b791-bf1d7423a49b"
+  },
+  {
+    "name": "Guarulhos, SP",
+    "country": "BRA",
+    "id": "316a6bb4-653f-4c1a-9df9-fd0dc2a9f000"
+  },
+  {
+    "name": "Campinas, SP",
+    "country": "BRA",
+    "id": "30b654e4-38ff-4251-8e7a-fb7f215f1aba"
+  },
+  {
+    "name": "São Gonçalo, RJ",
+    "country": "BRA",
+    "id": "6ad3efcf-1d06-4a16-b6b7-8ec214b30bc5"
+  },
+  {
+    "name": "São Luís, MA",
+    "country": "BRA",
+    "id": "49618771-e35a-4063-8aa4-eaeaf4683167"
+  },
+  {
+    "name": "Maceió, AL",
+    "country": "BRA",
+    "id": "871c0050-2e61-4d81-941c-3ecb4fa328b1"
+  },
+  {
+    "name": "Duque de Caxias, RJ",
+    "country": "BRA",
+    "id": "cea5bc25-10d7-49ec-9710-4834e7f4de5f"
+  },
+  {
+    "name": "Nova Iguaçu, RJ",
+    "country": "BRA",
+    "id": "8111232e-25f1-4d97-baee-73c94c8a0e20"
+  },
+  {
+    "name": "Natal, RN",
+    "country": "BRA",
+    "id": "22ce0265-5ccd-4564-9417-35145d939f2c"
+  },
+  {
+    "name": "Teresina, PI",
+    "country": "BRA",
+    "id": "61deb2ed-9ad5-4b85-bc2a-3f95f3919cd2"
+  },
+  {
+    "name": "Campo Grande, MS",
+    "country": "BRA",
+    "id": "06be51cc-bb53-41d8-a129-8ba2c2c038fa"
+  },
+  {
+    "name": "São Bernardo do Campo, SP",
+    "country": "BRA",
+    "id": "77268878-a602-42e4-a316-aff45524e1bc"
+  },
+  {
+    "name": "Osasco, SP",
+    "country": "BRA",
+    "id": "7994b0a5-9019-4a7a-9e6f-168861fe0e56"
+  },
+  {
+    "name": "João Pessoa, PA",
+    "country": "BRA",
+    "id": "decd90b3-7ada-45a1-8060-20035ad81ae0"
+  },
+  {
+    "name": "Jaboatão dos Guararapes, PE",
+    "country": "BRA",
+    "id": "64c47728-7e65-45eb-a97e-14061f9b3d7d"
+  },
+  {
+    "name": "Santo André, SP",
+    "country": "BRA",
+    "id": "adeeae10-b112-4057-b29b-8a5ababdc055"
+  },
+  {
+    "name": "Uberlândia, MG",
+    "country": "BRA",
+    "id": "61049fba-70db-4c26-b3a0-ad5543739a3c"
+  },
+  {
+    "name": "Contagem, MG",
+    "country": "BRA",
+    "id": "6e52f06e-5115-43d4-ae98-1f9fcaa26463"
+  },
+  {
+    "name": "São José dos Campos, SP",
+    "country": "BRA",
+    "id": "270414dc-9f57-4e6b-b8cd-2c8bf335e9e9"
+  },
+  {
+    "name": "Feira de Santana, BA",
+    "country": "BRA",
+    "id": "1a5f585f-fade-45eb-81ed-0ed34da26cb2"
+  },
+  {
+    "name": "Sorocaba, SP",
+    "country": "BRA",
+    "id": "68eb4965-432e-428a-afc8-27963658d35e"
+  },
+  {
+    "name": "Ribeirão Preto, SP",
+    "country": "BRA",
+    "id": "872c7635-03a9-4da4-b6d2-b15647a0847e"
+  },
+  {
+    "name": "Cuiabá, MT",
+    "country": "BRA",
+    "id": "ccbbab16-bdd2-4067-9cb4-b5e7f80058f3"
+  },
+  {
+    "name": "Aracaju, SE",
+    "country": "BRA",
+    "id": "874eb6a5-c1d1-48d3-9c90-4fe398f027e0"
+  },
+  {
+    "name": "Juiz de Fora, MG",
+    "country": "BRA",
+    "id": "8c28486e-8e6d-4b52-bc09-1f62c2b44926"
+  },
+  {
+    "name": "Aparecida de Goiânia, GO",
+    "country": "BRA",
+    "id": "7c986f86-a7d3-414b-9529-a7ae97133aec"
+  },
+  {
+    "name": "Londrina, PR",
+    "country": "BRA",
+    "id": "93fa4cba-0093-46af-96d2-6a28cd49596f"
+  },
+  {
+    "name": "Ananindeua, PA",
+    "country": "BRA",
+    "id": "249fa148-1e82-418d-b712-7bc5ebd5ca91"
+  },
+  {
+    "name": "Belford Roxo, RJ",
+    "country": "BRA",
+    "id": "cc92fb0c-11c1-4f3c-b8bb-82bfa4a602c2"
+  },
+  {
+    "name": "Joinville, SC",
+    "country": "BRA",
+    "id": "a0495c07-03ad-4830-9436-6e76296fe503"
+  },
+  {
+    "name": "Niterói, RJ",
+    "country": "BRA",
+    "id": "e83d8cf5-7312-4a74-8186-e4dfd317cdd8"
+  },
+  {
+    "name": "São João de Meriti, RJ",
+    "country": "BRA",
+    "id": "6a555600-94ed-46d7-bb84-cd617c499c02"
+  },
+  {
+    "name": "Betim, MG",
+    "country": "BRA",
+    "id": "0973a8d5-c01f-4347-853e-b9d0afb7d115"
+  },
+  {
+    "name": "Campos dos Goitacazes, RJ",
+    "country": "BRA",
+    "id": "e901ae01-99ae-4d4f-9f08-298dc0d6cc95"
+  },
+  {
+    "name": "Santos, SP",
+    "country": "BRA",
+    "id": "75ea1271-fde5-484c-a946-49408163f020"
+  },
+  {
+    "name": "Mauá, SP",
+    "country": "BRA",
+    "id": "91dca1e9-4a63-44bf-9bda-4f4c23170399"
+  },
+  {
+    "name": "São José do Rio Preto, SP",
+    "country": "BRA",
+    "id": "2e81849a-8e29-45c1-8b31-1d03d4237dc3"
+  },
+  {
+    "name": "Vila Velha, ES",
+    "country": "BRA",
+    "id": "e9727cc5-c880-4a40-b40d-cbd6ec72427c"
+  },
+  {
+    "name": "Caxias do Sul, PS",
+    "country": "BRA",
+    "id": "e44df1df-33f0-41e7-8944-669b78e74faa"
   }
 ]
