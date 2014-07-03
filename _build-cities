@@ -1,0 +1,27 @@
+#!/usr/bin/env ruby
+
+require 'json'
+require 'securerandom'
+require 'open-uri'
+require 'uri'
+
+def url_for(city)
+  url = "http://maps.googleapis.com/maps/api/staticmap?style=feature:all%7Celement:labels%7Cvisibility:off&zoom=13&size=600x600&center=#{URI.escape city}"
+end
+
+cities = JSON.parse(File.open("_includes/cities.json").read)
+
+begin
+  cities.reject {|x| x.has_key? 'id' }.map do |city|
+    name = city['name']
+    id = SecureRandom.uuid
+
+    f = open("img/cities/#{id}.png", 'w')
+    puts "Beginning #{name}..."
+    f.write open(url_for(name)).read
+    city['id'] = id
+    f.close
+  end
+ensure
+  File.open("_includes/cities.json", 'w').write(JSON.pretty_generate(cities))
+end

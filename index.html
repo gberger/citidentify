@@ -3,78 +3,27 @@
 <head>
   <meta charset="UTF-8">
   <title>Citidentify</title>
+  <link rel="stylesheet" href="style/style.css"/>
+  <link rel="stylesheet" href="style/buttons.min.css"/>
 </head>
 <body>
 <h2>What city is this?</h2>
 
-<ul class="choices">
-  <li id="choice-1" class="choice"></li>
-  <li id="choice-2" class="choice"></li>
-  <li id="choice-3" class="choice"></li>
+<ul>
+  <li><button id="choice-1" class="choice pure-button pure-button-primary button-large"></button></li>
+  <li><button id="choice-2" class="choice pure-button pure-button-primary button-large"></button></li>
+  <li><button id="choice-3" class="choice pure-button pure-button-primary button-large"></button></li>
 </ul>
 
 <p><span class="correct">0</span>/<span class="total">0</span></p>
 
-<img id="map-img" src="blank.gif"/>
+<img id="map-img" src="img/blank.gif"/>
 
-<script>
-var cities = [
-  "New York, N.Y.",
-  "Los Angeles, Calif.",
-  "Chicago, Ill.",
-  "Houston, Tex.",
-  "Philadelphia, Pa.",
-  "Phoenix, Ariz.",
-  "San Antonio, Tex.",
-  "San Diego, Calif.",
-  "Dallas, Tex.",
-  "San Jose, Calif.",
-  "Austin, Tex.",
-  "Jacksonville, Fla.",
-  "Indianapolis, Ind.",
-  "San Francisco, Calif.",
-  "Columbus, Ohio",
-  "Fort Worth, Tex.",
-  "Charlotte, N.C.",
-  "Detroit, Mich.",
-  "El Paso, Tex.",
-  "Memphis, Tenn.",
-  "Boston, Mass.",
-  "Seattle, Wash.",
-  "Denver, Colo.",
-  "Washington, DC",
-  "Nashville-Davidson, Tenn.1",
-  "Baltimore, Md.",
-  "Louisville-Jefferson County, Ky.2",
-  "Portland, Ore.",
-  "Oklahoma City, Okla.",
-  "Milwaukee, Wis.",
-  "Las Vegas, Nev.",
-  "Albuquerque, N.M.",
-  "Tucson, Ariz.",
-  "Fresno, Calif.",
-  "Sacramento, Calif.",
-  "Long Beach, Calif.",
-  "Kansas City, Mo.",
-  "Mesa, Ariz.",
-  "Virginia Beach, Va.",
-  "Atlanta, Ga.",
-  "Colorado Springs, Colo.",
-  "Raleigh, N.C.",
-  "Omaha, Nebr.",
-  "Miami, Fla.",
-  "Oakland, Calif.",
-  "Tulsa, Okla.",
-  "Minneapolis, Minn.",
-  "Cleveland, Ohio",
-  "Wichita, Kans.",
-  "Arlington, Tex."
-]
-</script>
+<script src="script/lodash.min.js"></script>
+<script src="script/jquery.min.js"></script>
+<script src="script/rx.lite.min.js"></script>
 
-<script src="lodash.min.js"></script>
-<script src="jquery.min.js"></script>
-<script src="rx.lite.min.js"></script>
+<script src="script/cities.js"></script>
 <script>
   function shuffle(array) {
     var arr = _.clone(array);
@@ -103,7 +52,7 @@ var cities = [
   };
 
   var buildUrl = function(city) {
-    return "http://maps.googleapis.com/maps/api/staticmap?key=AIzaSyDjxndpPzjINx2A2fYB2tECl1OkBLjfqAM&style=feature:all|element:labels|visibility:off&zoom=13&size=600x600&center=" + city;
+    return "img/cities/" + city.id + ".png";
   }
 </script>
 <script>
@@ -117,8 +66,8 @@ var cities = [
 
   var resultStream = Rx.Observable.fromEvent($choices, 'click')
     .map(function(e) {
-      var guess = ($(e.target).data('city'));
-      var actual = ($mapImg.data('city'));
+      var guess = $(e.target).data('city-id');
+      var actual = $mapImg.data('city-id');
       return guess === actual;
     });
 
@@ -129,7 +78,7 @@ var cities = [
     $correct.text(correct);
   });
 
-  totalStream = resultStream.scan(0, function(acc) {
+  var totalStream = resultStream.scan(0, function(acc) {
     return acc + 1;
   });
   totalStream.subscribe(function(total) {
@@ -141,10 +90,13 @@ var cities = [
   refreshStream.subscribe(function(){
     var possible = sample(cities, 3);
     var chosen = sample(possible);
-    $choice1.text(possible[0]).data('city', possible[0]);
-    $choice2.text(possible[1]).data('city', possible[1]);
-    $choice3.text(possible[2]).data('city', possible[2]);
-    $mapImg.attr('src', 'blank.gif').attr('src', buildUrl(chosen)).data('city', chosen);
+    $choice1.text(possible[0].name).data('city-id', possible[0].id);
+    $choice2.text(possible[1].name).data('city-id', possible[1].id);
+    $choice3.text(possible[2].name).data('city-id', possible[2].id);
+    $mapImg.attr('src', 'img/blank.gif');
+    setTimeout(function(){
+      $mapImg.attr('src', buildUrl(chosen)).data('city-id', chosen.id);
+    }, 0);
   });
 
 
