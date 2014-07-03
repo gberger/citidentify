@@ -6,8 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="style/normalize.css"/>
-  <link rel="stylesheet" href="style/style.css"/>
   <link rel="stylesheet" href="style/buttons.min.css"/>
+  <link rel="stylesheet" href="style/style.css"/>
+  <link rel="stylesheet" href="style/font-awesome.min.css"/>
   <meta name="descrption" content="What city is this? Guess the city based on its map!">
 </head>
 <body>
@@ -19,13 +20,15 @@
   </div>
 
   <ul class="choices">
-    <li><button id="choice-1" class="choice pure-button pure-button-primary button-large"></button></li>
-    <li><button id="choice-2" class="choice pure-button pure-button-primary button-large"></button></li>
-    <li><button id="choice-3" class="choice pure-button pure-button-primary button-large"></button></li>
+    <li class="choice"><button id="choice-1" class="pure-button"></button></li>
+    <li class="choice"><button id="choice-2" class="pure-button"></button></li>
+    <li class="choice"><button id="choice-3" class="pure-button"></button></li>
   </ul>
 
-
   <img id="map-img" src="img/blank.gif"/>
+
+  <button class="pure-button refresh-button" style="display: block;"><i class="fa fa-refresh"></i></button>
+
 </div>
 
 <script src="script/lodash.min.js"></script>
@@ -67,21 +70,34 @@
 <script>
   var $correct = $('.correct');
   var $total = $('.total');
-  var $choices = $('.choice');
+  var $buttons = $('.choice button');
   var $choice1 = $('#choice-1');
   var $choice2 = $('#choice-2');
   var $choice3 = $('#choice-3');
   var $mapImg = $('#map-img');
+  var $refreshButton = $('.refresh-button');
 
-  var resultStream = Rx.Observable.fromEvent($choices, 'click')
+  var elementFromCityId = function(cityId) {
+    return $buttons.filter(function(i, el) {
+      return $(el).data('city-id') === cityId;
+    });
+  };
+
+  var resultStream = Rx.Observable.fromEvent($buttons, 'click')
     .map(function(e) {
       var guess = $(e.target).data('city-id');
       var actual = $mapImg.data('city-id');
-      return guess === actual;
+      return {
+        guess: guess,
+        actual: actual,
+        correctness: guess === actual,
+        guessElement: elementFromCityId(guess),
+        actualElement: elementFromCityId(actual)
+      };
     });
 
-  var correctStream = resultStream.scan(0, function(acc, x) {
-    return acc + (x ? 1 : 0);
+  var correctStream = resultStream.scan(0, function(acc, result) {
+    return acc + (result.correctness ? 1 : 0);
   });
   correctStream.subscribe(function(correct) {
     $correct.text(correct);
@@ -94,9 +110,23 @@
     $total.text(total);
   });
 
-  var refreshStream = Rx.Observable.return('startup').merge(resultStream);
+  resultStream.subscribe(function(result) {
+    console.log(result);
+    $buttons.attr('disabled', true);
+
+    if(result.correctness) {
+      result.guessElement.addClass("guess-correct");
+    } else {
+      result.actualElement.addClass("guess-correct");
+      result.guessElement.addClass("guess-wrong");
+    }
+  });
+
+  var refreshStream = Rx.Observable.fromEvent($refreshButton, 'click').startWith('startup');
 
   refreshStream.subscribe(function(){
+    $buttons.removeClass("guess-correct guess-wrong").attr('disabled', false);
+
     var possible = sample(cities, 3);
     var chosen = sample(possible);
     $choice1.text(possible[0].name).data('city-id', possible[0].id);

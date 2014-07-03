@@ -32,13 +32,21 @@ img {
  max-width: 100%;
 }
 
-.choices li {
-  list-style: none;
-  display: inline-block;
+.clearfix:after {
+  content: " ";
+  visibility: hidden;
+  display: block;
+  height: 0;
+  clear: both;
 }
 
 .title h1 {
   float: left;
+}
+
+.choices li {
+  list-style: none;
+  display: inline-block;
 }
 
 .score {
@@ -50,10 +58,20 @@ img {
   color: #27ae60;
 }
 
-.clearfix:after {
-  content: " ";
-  visibility: hidden;
+.pure-button {
+  margin: 0.2em;
+  font-size: 1.5em;
+}
+
+.guess-correct {
+  background: rgb(28, 184, 65);
+}
+
+.guess-wrong {
+  background: rgb(202, 60, 60);
+}
+
+.refresh-button {
   display: block;
-  height: 0;
-  clear: both;
+  width: 100%;
 }
