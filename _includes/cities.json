@@ -508,5 +508,230 @@
     "name": "Florianópolis, SC",
     "region": "BRA",
     "id": "7a786f2b-5532-4576-9365-972796376340"
+  },
+  {
+    "name": "Amsterdam, Netherlands",
+    "region": "EUR",
+    "id": "afd56d6d-2622-4727-afd4-4d3aad06f291"
+  },
+  {
+    "name": "Andorra la Vella, Andorra",
+    "region": "EUR",
+    "id": "f7618dc6-fce6-49cb-9c18-d072d7287691"
+  },
+  {
+    "name": "Athens, Greece",
+    "region": "EUR",
+    "id": "7993afa4-6813-4b09-9838-56c1110fd734"
+  },
+  {
+    "name": "Belgrade, Serbia",
+    "region": "EUR",
+    "id": "6a393542-76cf-4559-85ab-de42fe3b52a1"
+  },
+  {
+    "name": "Berlin, Germany",
+    "region": "EUR",
+    "id": "30f24c9c-1c7f-4da8-bb02-f7f4e42a9e71"
+  },
+  {
+    "name": "Bern, Switzerland",
+    "region": "EUR",
+    "id": "377beea2-8666-4f66-b049-89bf7c511c5b"
+  },
+  {
+    "name": "Bratislava, Slovakia",
+    "region": "EUR",
+    "id": "9b532eda-6c24-4815-abbb-bcc3ed5d6ce4"
+  },
+  {
+    "name": "Brussels, Belgium",
+    "region": "EUR",
+    "id": "05436967-8d9f-4748-81a1-bd1daaa30faa"
+  },
+  {
+    "name": "Bucharest, Romania",
+    "region": "EUR",
+    "id": "188c13e2-e5c7-4e40-b590-44907ebfb384"
+  },
+  {
+    "name": "Budapest, Hungary",
+    "region": "EUR",
+    "id": "371c7c6a-d2c9-4912-9f22-abb5645598a0"
+  },
+  {
+    "name": "Chisinau, Moldova",
+    "region": "EUR",
+    "id": "22733f28-1637-4c2e-b2e9-6be6d38e905f"
+  },
+  {
+    "name": "Copenhagen, Denmark",
+    "region": "EUR",
+    "id": "827b52cd-e408-46fb-8611-37fae1dfab6f"
+  },
+  {
+    "name": "Dublin, Ireland",
+    "region": "EUR",
+    "id": "69b3886d-13e5-4cc7-a0bc-438dd06fb032"
+  },
+  {
+    "name": "Helsinki, Finland",
+    "region": "EUR",
+    "id": "bc87f054-22f7-4537-bfa9-28cce2f93ef3"
+  },
+  {
+    "name": "Kiev, Ukraine",
+    "region": "EUR",
+    "id": "89d4f1fb-af40-4a19-a0da-8075a4c273bb"
+  },
+  {
+    "name": "Lisbon, Portugal ",
+    "region": "EUR",
+    "id": "9feeaa72-7adc-4aaf-869e-99e1c2258a45"
+  },
+  {
+    "name": "Ljubljana, Slovenia",
+    "region": "EUR",
+    "id": "4b40e805-26a9-4458-8fc6-44ed79fcea14"
+  },
+  {
+    "name": "London, United Kingdom",
+    "region": "EUR",
+    "id": "7d896ff8-e9d2-4ec3-afbc-f4fe4c1c70e6"
+  },
+  {
+    "name": "Luxembourg, Luxembourg ",
+    "region": "EUR",
+    "id": "d3e43b9c-014f-46b0-bcf5-bf2853b70ca5"
+  },
+  {
+    "name": "Madrid, Spain",
+    "region": "EUR",
+    "id": "decf538f-4aaf-47b1-9e73-e6f3382b54d3"
+  },
+  {
+    "name": "Minsk, Belarus",
+    "region": "EUR",
+    "id": "fe91f42b-e89f-4776-b4c1-b58650980774"
+  },
+  {
+    "name": "Monaco, Monaco",
+    "region": "EUR",
+    "id": "110e4928-cbcd-4f95-82b4-e863f996c2a9"
+  },
+  {
+    "name": "Moscow, Russia",
+    "region": "EUR",
+    "id": "dfbe8957-cb26-4cc7-bd1f-59e82ea329fa"
+  },
+  {
+    "name": "Nicosia, Cyprus",
+    "region": "EUR",
+    "id": "5cdec09b-da44-42c3-b043-b4ac867326ca"
+  },
+  {
+    "name": "Nuuk, Greenland ",
+    "region": "EUR",
+    "id": "6e1ef512-c60a-496f-a9e6-c0b80b09f714"
+  },
+  {
+    "name": "Oslo, Norway",
+    "region": "EUR",
+    "id": "c76ff807-b84a-4c7e-a74d-1c3e66eda173"
+  },
+  {
+    "name": "Paris, France",
+    "region": "EUR",
+    "id": "32b11fc8-6cd2-436a-8996-e2e04eba2eae"
+  },
+  {
+    "name": "Podgorica, Montenegro",
+    "region": "EUR",
+    "id": "0bbf412b-3d07-4ba5-b202-976084a62944"
+  },
+  {
+    "name": "Prague, Czech Republic",
+    "region": "EUR",
+    "id": "c57ac913-a7d0-4324-bb43-b4fa9aa7ff8b"
+  },
+  {
+    "name": "Reykjavik, Iceland",
+    "region": "EUR",
+    "id": "1abd539e-b218-4251-af80-b0da905fc9d9"
+  },
+  {
+    "name": "Riga, Latvia",
+    "region": "EUR",
+    "id": "623624cc-2bf7-4be5-abd1-90744c23e869"
+  },
+  {
+    "name": "Rome, Italy",
+    "region": "EUR",
+    "id": "185adca4-a1a7-436f-bdde-4fdc6ad54895"
+  },
+  {
+    "name": "Sarajevo, Bosnia & Herzegovina",
+    "region": "EUR",
+    "id": "9853adc1-32eb-4549-977e-ea7d0125ecb1"
+  },
+  {
+    "name": "Skopje, Macedonia",
+    "region": "EUR",
+    "id": "977fa53c-938c-49ed-98eb-01638ca4a7a8"
+  },
+  {
+    "name": "Sofia, Bulgaria ",
+    "region": "EUR",
+    "id": "d63e71c7-4bf0-4789-93cc-f1352185486f"
+  },
+  {
+    "name": "Stockholm, Sweden",
+    "region": "EUR",
+    "id": "0dcf990b-97de-4b9f-a645-fbd8fb89541d"
+  },
+  {
+    "name": "Tallinn, Estonia ",
+    "region": "EUR",
+    "id": "11c30a03-d91f-4755-984f-434bd16fc33e"
+  },
+  {
+    "name": "Tirana, Albania",
+    "region": "EUR",
+    "id": "9a0f0df9-171e-49b9-8fe2-4735a25fd715"
+  },
+  {
+    "name": "Vaduz, Liechtenstein",
+    "region": "EUR",
+    "id": "29a03349-5489-4bc1-896b-a87910891593"
+  },
+  {
+    "name": "Valletta, Malta",
+    "region": "EUR",
+    "id": "64210e61-2ebc-4beb-9f1d-646c577df677"
+  },
+  {
+    "name": "Vatican City, Holy See",
+    "region": "EUR",
+    "id": "777d61e1-43ab-4c37-aae3-0f80c640aae0"
+  },
+  {
+    "name": "Vienna, Austria",
+    "region": "EUR",
+    "id": "1f10c62a-901b-4949-b43c-16081a7fdde3"
+  },
+  {
+    "name": "Vilnius, Lithuania",
+    "region": "EUR",
+    "id": "e055995e-225a-4188-8cad-d3d528ffb1e5"
+  },
+  {
+    "name": "Warsaw, Poland",
+    "region": "EUR",
+    "id": "961fee8c-19ca-4397-b7ed-ae5a49bb129d"
+  },
+  {
+    "name": "Zagreb, Croatia",
+    "region": "EUR",
+    "id": "12f56dc2-76e1-4756-840a-c0c8920786c0"
   }
 ]
