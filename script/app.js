@@ -3,6 +3,8 @@
 
   var cities = window.cities;
 
+  var DELAY = 2 * 1000;
+
   /* UTILS
    *******/
 
@@ -47,6 +49,7 @@
   var $choice2 = $('#choice-2');
   var $choice3 = $('#choice-3');
   var $mapImg = $('#map-img');
+  var $imgLoader = $('#img-loader');
   var $refreshButton = $('.refresh-button');
 
   var $datasets = $('.datasets button');
@@ -103,21 +106,25 @@
     }
   });
 
-  var refreshStream = Rx.Observable.fromEvent($refreshButton, 'click');
+  var refreshStream = resultStream.map(function(){return DELAY});
 
-  refreshStream.subscribe(function () {
-    $buttons.removeClass("guess-correct guess-wrong").attr('disabled', false);
-
+  var refresh = function(delay) {
     var possible = sample(dataset.value, 3);
     var chosen = sample(possible);
-    $choice1.text(possible[0].name).data('city-id', possible[0].id);
-    $choice2.text(possible[1].name).data('city-id', possible[1].id);
-    $choice3.text(possible[2].name).data('city-id', possible[2].id);
-    $mapImg.attr('src', 'img/blank.gif');
-    setTimeout(function () {
-      $mapImg.attr('src', buildUrl(chosen)).data('city-id', chosen.id);
-    }, 0);
-  });
+
+    var url = buildUrl(chosen);
+    $imgLoader.attr('src', url);
+
+    setTimeout(function() {
+      $buttons.removeClass("guess-correct guess-wrong").attr('disabled', false);
+      $choice1.text(possible[0].name).data('city-id', possible[0].id);
+      $choice2.text(possible[1].name).data('city-id', possible[1].id);
+      $choice3.text(possible[2].name).data('city-id', possible[2].id);
+      $mapImg.attr('src', url).data('city-id', chosen.id);
+    }, delay);
+  };
+
+  refreshStream.subscribe(refresh);
 
   /* INIT */
   // TODO cleanup.
@@ -143,8 +150,7 @@
   datasetStream.subscribe(function() {
     $init.hide();
     $game.show();
-    // TODO is there a better way?
-    $refreshButton.click();
+    refresh(0);
   });
 
 })(jQuery, Rx, window);
