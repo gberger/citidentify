@@ -49,6 +49,10 @@
   var $mapImg = $('#map-img');
   var $refreshButton = $('.refresh-button');
 
+  var $datasets = $('.datasets button');
+  var $init = $('.init');
+  var $game = $('.game');
+
   var elementFromCityId = function (cityId) {
     return $buttons.filter(function (i, el) {
       return $(el).data('city-id') === cityId;
@@ -98,12 +102,12 @@
     }
   });
 
-  var refreshStream = Rx.Observable.fromEvent($refreshButton, 'click').startWith('startup');
+  var refreshStream = Rx.Observable.fromEvent($refreshButton, 'click');
 
   refreshStream.subscribe(function () {
     $buttons.removeClass("guess-correct guess-wrong").attr('disabled', false);
 
-    var possible = sample(cities, 3);
+    var possible = sample(dataset.value, 3);
     var chosen = sample(possible);
     $choice1.text(possible[0].name).data('city-id', possible[0].id);
     $choice2.text(possible[1].name).data('city-id', possible[1].id);
@@ -112,6 +116,36 @@
     setTimeout(function () {
       $mapImg.attr('src', buildUrl(chosen)).data('city-id', chosen.id);
     }, 0);
+  });
+
+
+
+  /* INIT */
+  var dataset = new Rx.BehaviorSubject(cities);
+
+  var datasetStream = Rx.Observable.fromEvent($datasets, 'click')
+    .map(function(e) {
+      return $(e.target).data('dataset');
+    }).map(function(setName) {
+      if(setName === "USA") {
+        return _.filter(cities, function(city) {
+          return city.country === "USA";
+        });
+      } else if(setName === "BRA") {
+        return _.filter(cities, function(city) {
+          return city.country === "BRA";
+        });
+      }
+    })
+
+  datasetStream.subscribe(function(set) {
+    dataset.onNext(set);
+  });
+
+  datasetStream.subscribe(function() {
+    $init.hide();
+    $game.show();
+    $refreshButton.click();
   });
 
 })(jQuery, Rx, window);

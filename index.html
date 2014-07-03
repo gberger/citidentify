@@ -19,16 +19,25 @@
     <p class="score"><span class="correct">0</span>/<span class="total">0</span></p>
   </div>
 
-  <ul class="choices">
-    <li class="choice"><button id="choice-1" class="pure-button"></button></li>
-    <li class="choice"><button id="choice-2" class="pure-button"></button></li>
-    <li class="choice"><button id="choice-3" class="pure-button"></button></li>
-  </ul>
+  <div class="init">
+    <h2>First, choose a dataset:</h2>
+    <ul class="datasets">
+      <li><button class="pure-button" data-dataset="BRA">Brazil</button></li>
+      <li><button class="pure-button" data-dataset="USA">USA</button></li>
+    </ul>
+  </div>
 
-  <img id="map-img" src="img/blank.gif"/>
+  <div class="game" style="display: none;">
+    <ul class="choices">
+      <li class="choice"><button id="choice-1" class="pure-button"></button></li>
+      <li class="choice"><button id="choice-2" class="pure-button"></button></li>
+      <li class="choice"><button id="choice-3" class="pure-button"></button></li>
+    </ul>
 
-  <button class="pure-button refresh-button" style="display: block;"><i class="fa fa-refresh"></i></button>
+    <img id="map-img" src="img/blank.gif"/>
 
+    <button class="pure-button refresh-button" style="display: block;"><i class="fa fa-refresh"></i></button>
+  </div>
 </div>
 
 <script src="script/lodash.min.js"></script>

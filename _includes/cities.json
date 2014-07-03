@@ -1,202 +1,252 @@
 [
   {
     "name": "New York, N.Y.",
+    "country": "USA",
     "id": "8485e761-379a-415a-8420-150cde2eae5d"
   },
   {
     "name": "Los Angeles, Calif.",
+    "country": "USA",
     "id": "27f78c30-76fa-458c-86ca-c1bc7be8c437"
   },
   {
     "name": "Chicago, Ill.",
+    "country": "USA",
     "id": "4f2022ec-984c-4a5e-a139-568bbdd4926a"
   },
   {
     "name": "Houston, Tex.",
+    "country": "USA",
     "id": "194509cb-ad08-407a-a8fa-f223c65a4079"
   },
   {
     "name": "Philadelphia, Pa.",
+    "country": "USA",
     "id": "c99c2caa-343b-4fd4-be09-0672ddf6c719"
   },
   {
     "name": "Phoenix, Ariz.",
+    "country": "USA",
     "id": "f6e6e64f-8590-4927-985b-9a67bd85bcac"
   },
   {
     "name": "San Antonio, Tex.",
+    "country": "USA",
     "id": "d9c879e3-9344-45bc-9b5a-29be4ece7724"
   },
   {
     "name": "San Diego, Calif.",
+    "country": "USA",
     "id": "eb62b8b8-16ae-4a32-800e-8dd37dfd008b"
   },
   {
     "name": "Dallas, Tex.",
+    "country": "USA",
     "id": "9a7c901f-3ed5-4c04-bd50-84a9b26a06be"
   },
   {
     "name": "San Jose, Calif.",
+    "country": "USA",
     "id": "f40e2704-6ef8-4983-9fda-9d1bba30eef5"
   },
   {
     "name": "Austin, Tex.",
+    "country": "USA",
     "id": "b85e2d1e-acd7-405c-a0a4-5da8db038b29"
   },
   {
     "name": "Jacksonville, Fla.",
+    "country": "USA",
     "id": "3990e594-129f-4b61-a77b-f02425aca230"
   },
   {
     "name": "Indianapolis, Ind.",
+    "country": "USA",
     "id": "25f93089-84a4-4856-ad2a-f8262d53b6dd"
   },
   {
     "name": "San Francisco, Calif.",
+    "country": "USA",
     "id": "809ee06e-bc0d-4f2a-88ca-2eddd59833ae"
   },
   {
     "name": "Columbus, Ohio",
+    "country": "USA",
     "id": "40a39dcf-cbd3-408f-a327-b6cc83f8dff8"
   },
   {
     "name": "Fort Worth, Tex.",
+    "country": "USA",
     "id": "8cd8a592-cffa-4c11-9bbd-7ae4ca90ddf4"
   },
   {
     "name": "Charlotte, N.C.",
+    "country": "USA",
     "id": "3762cdfb-f1e8-42dc-b449-a525bcab3a6e"
   },
   {
     "name": "Detroit, Mich.",
+    "country": "USA",
     "id": "27dcdffe-f010-4819-b333-fa899e11e145"
   },
   {
     "name": "El Paso, Tex.",
+    "country": "USA",
     "id": "5d3458ae-1db1-47e2-bc69-4c1091597ee3"
   },
   {
     "name": "Memphis, Tenn.",
+    "country": "USA",
     "id": "4f008b38-0ef0-4c26-af40-99d9c8bc08ef"
   },
   {
     "name": "Boston, Mass.",
+    "country": "USA",
     "id": "dcc9ab75-e44f-4003-bdd9-752718f8bebc"
   },
   {
     "name": "Seattle, Wash.",
+    "country": "USA",
     "id": "f4a57c16-7dd2-464a-9677-6ed8b30a7b68"
   },
   {
     "name": "Denver, Colo.",
+    "country": "USA",
     "id": "ae97e055-99b9-4941-954c-e4ae2e467dce"
   },
   {
     "name": "Washington, DC",
+    "country": "USA",
     "id": "f49c4fcc-b475-4586-9249-bae15fb81c53"
   },
   {
     "name": "Nashville-Davson, Tenn.",
+    "country": "USA",
     "id": "ab67d001-5a0a-40b7-af2d-694843ec2807"
   },
   {
     "name": "Baltimore, Md.",
+    "country": "USA",
     "id": "fbbe0e06-7d6f-4c17-886c-98dc34db9d98"
   },
   {
     "name": "Louisville-Jefferson County, Ky.",
+    "country": "USA",
     "id": "b70ea8a2-334f-4971-b61b-e7157fa4cc27"
   },
   {
     "name": "Portland, Ore.",
+    "country": "USA",
     "id": "bd655890-3412-46aa-bc78-d9b0b7da9470"
   },
   {
     "name": "Oklahoma City, Okla.",
+    "country": "USA",
     "id": "3ab8ed56-d9aa-41fc-8b49-ca61be976903"
   },
   {
     "name": "Milwaukee, Wis.",
+    "country": "USA",
     "id": "4c5b6548-d01f-402d-8769-4a21ccb7361f"
   },
   {
     "name": "Las Vegas, Nev.",
+    "country": "USA",
     "id": "5cf407f4-667f-468b-9322-87533a226112"
   },
   {
     "name": "Albuquerque, N.M.",
+    "country": "USA",
     "id": "d91889e9-c2e4-4749-9243-d37be2e3451f"
   },
   {
     "name": "Tucson, Ariz.",
+    "country": "USA",
     "id": "483d4178-6bca-4cbb-b46d-ee53ea1b3c98"
   },
   {
     "name": "Fresno, Calif.",
+    "country": "USA",
     "id": "86e8bf43-5516-4868-bec7-963bed419b76"
   },
   {
     "name": "Sacramento, Calif.",
+    "country": "USA",
     "id": "ee47fea1-2796-4826-b914-00ec80dcf5a7"
   },
   {
     "name": "Long Beach, Calif.",
+    "country": "USA",
     "id": "a12d4df0-0b3a-475f-9738-4cb18afd05c4"
   },
   {
     "name": "Kansas City, Mo.",
+    "country": "USA",
     "id": "d288a1ce-8771-46d1-8a62-715b43dff183"
   },
   {
     "name": "Mesa, Ariz.",
+    "country": "USA",
     "id": "82e6253f-f713-485a-b687-a3db48a19e1b"
   },
   {
     "name": "Virginia Beach, Va.",
+    "country": "USA",
     "id": "dff96635-bc76-46e3-9212-5887e11a0213"
   },
   {
     "name": "Atlanta, Ga.",
+    "country": "USA",
     "id": "1cdac3e6-d848-4e9d-a8b4-a1bad532cd63"
   },
   {
     "name": "Colorado Springs, Colo.",
+    "country": "USA",
     "id": "4e25c2a6-a4ec-418f-8679-746bf92f1abd"
   },
   {
     "name": "Raleigh, N.C.",
+    "country": "USA",
     "id": "47d5a32f-13db-400d-8a14-203470bf8cc3"
   },
   {
     "name": "Omaha, Nebr.",
+    "country": "USA",
     "id": "5dc3808b-2ac6-4adc-baaf-1812602708f0"
   },
   {
     "name": "Miami, Fla.",
+    "country": "USA",
     "id": "e5fbcb91-fdea-41c3-9d0a-925a74e4624f"
   },
   {
     "name": "Oakland, Calif.",
+    "country": "USA",
     "id": "9d3d319c-3019-40f0-837b-20a3571dd4f4"
   },
   {
     "name": "Tulsa, Okla.",
+    "country": "USA",
     "id": "b698f9b3-2f18-429a-b9e5-fa6beaefb50b"
   },
   {
     "name": "Minneapolis, Minn.",
+    "country": "USA",
     "id": "96df976a-14cb-435d-ae49-b2e74bdb1d08"
   },
   {
     "name": "Cleveland, Ohio",
+    "country": "USA",
     "id": "af00d489-1d0d-45cb-a3f8-1099babe3929"
   },
   {
     "name": "Wichita, Kans.",
+    "country": "USA",
     "id": "9c6787a5-5c8a-4a2b-9484-12b8a360b61e"
   },
   {
     "name": "Arlington, Tex.",
+    "country": "USA",
     "id": "fcb06a8e-ad6b-413d-adb0-c3dac0416965"
   }
 ]
