@@ -3,21 +3,28 @@
 <head>
   <meta charset="UTF-8">
   <title>Citidentify</title>
+  <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="style/normalize.css"/>
   <link rel="stylesheet" href="style/style.css"/>
   <link rel="stylesheet" href="style/buttons.min.css"/>
 </head>
 <body>
-<h2>What city is this?</h2>
 
-<ul>
-  <li><button id="choice-1" class="choice pure-button pure-button-primary button-large"></button></li>
-  <li><button id="choice-2" class="choice pure-button pure-button-primary button-large"></button></li>
-  <li><button id="choice-3" class="choice pure-button pure-button-primary button-large"></button></li>
-</ul>
+<div class="container">
+  <div class="title clearfix">
+    <h1>What city is this?</h1>
+    <p class="score"><span class="correct">0</span>/<span class="total">0</span></p>
+  </div>
 
-<p><span class="correct">0</span>/<span class="total">0</span></p>
+  <ul class="choices">
+    <li><button id="choice-1" class="choice pure-button pure-button-primary button-large"></button></li>
+    <li><button id="choice-2" class="choice pure-button pure-button-primary button-large"></button></li>
+    <li><button id="choice-3" class="choice pure-button pure-button-primary button-large"></button></li>
+  </ul>
 
-<img id="map-img" src="img/blank.gif"/>
+
+  <img id="map-img" src="img/blank.gif"/>
+</div>
 
 <script src="script/lodash.min.js"></script>
 <script src="script/jquery.min.js"></script>

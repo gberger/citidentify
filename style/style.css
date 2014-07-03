@@ -1,0 +1,59 @@
+body {
+  background-color: #eee;
+
+  color: #1A1A1A;
+  font-family: 'Lato', sans-serif;
+}
+
+.container {
+  text-align: center;
+}
+
+@media screen and (min-width:960px) {
+  .container {
+    position: relative;
+    -webkit-transform: none;
+    transform: none;
+    top: auto;
+    left: auto;
+    margin: 0 auto;
+    width: 35em;
+    padding: 3em 4em 3em 4em;
+  }
+}
+
+@media screen and (max-width:959px) {
+  .container {
+    padding: 1em;
+  }
+}
+
+img {
+  
+}
+
+.choices li {
+  list-style: none;
+  display: inline-block;
+}
+
+.title h1 {
+  float: left;
+}
+
+.score {
+  font-size: 1.5em;
+  float: right;
+}
+
+.correct {
+  color: #27ae60;
+}
+
+.clearfix:after {
+  content: " ";
+  visibility: hidden;
+  display: block;
+  height: 0;
+  clear: both;
+}
