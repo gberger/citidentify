@@ -1,512 +1,512 @@
 [
   {
     "name": "New York, N.Y.",
-    "country": "USA",
+    "region": "USA",
     "id": "8485e761-379a-415a-8420-150cde2eae5d"
   },
   {
     "name": "Los Angeles, Calif.",
-    "country": "USA",
+    "region": "USA",
     "id": "27f78c30-76fa-458c-86ca-c1bc7be8c437"
   },
   {
     "name": "Chicago, Ill.",
-    "country": "USA",
+    "region": "USA",
     "id": "4f2022ec-984c-4a5e-a139-568bbdd4926a"
   },
   {
     "name": "Houston, Tex.",
-    "country": "USA",
+    "region": "USA",
     "id": "194509cb-ad08-407a-a8fa-f223c65a4079"
   },
   {
     "name": "Philadelphia, Pa.",
-    "country": "USA",
+    "region": "USA",
     "id": "c99c2caa-343b-4fd4-be09-0672ddf6c719"
   },
   {
     "name": "Phoenix, Ariz.",
-    "country": "USA",
+    "region": "USA",
     "id": "f6e6e64f-8590-4927-985b-9a67bd85bcac"
   },
   {
     "name": "San Antonio, Tex.",
-    "country": "USA",
+    "region": "USA",
     "id": "d9c879e3-9344-45bc-9b5a-29be4ece7724"
   },
   {
     "name": "San Diego, Calif.",
-    "country": "USA",
+    "region": "USA",
     "id": "eb62b8b8-16ae-4a32-800e-8dd37dfd008b"
   },
   {
     "name": "Dallas, Tex.",
-    "country": "USA",
+    "region": "USA",
     "id": "9a7c901f-3ed5-4c04-bd50-84a9b26a06be"
   },
   {
     "name": "San Jose, Calif.",
-    "country": "USA",
+    "region": "USA",
     "id": "f40e2704-6ef8-4983-9fda-9d1bba30eef5"
   },
   {
     "name": "Austin, Tex.",
-    "country": "USA",
+    "region": "USA",
     "id": "b85e2d1e-acd7-405c-a0a4-5da8db038b29"
   },
   {
     "name": "Jacksonville, Fla.",
-    "country": "USA",
+    "region": "USA",
     "id": "3990e594-129f-4b61-a77b-f02425aca230"
   },
   {
     "name": "Indianapolis, Ind.",
-    "country": "USA",
+    "region": "USA",
     "id": "25f93089-84a4-4856-ad2a-f8262d53b6dd"
   },
   {
     "name": "San Francisco, Calif.",
-    "country": "USA",
+    "region": "USA",
     "id": "809ee06e-bc0d-4f2a-88ca-2eddd59833ae"
   },
   {
     "name": "Columbus, Ohio",
-    "country": "USA",
+    "region": "USA",
     "id": "40a39dcf-cbd3-408f-a327-b6cc83f8dff8"
   },
   {
     "name": "Fort Worth, Tex.",
-    "country": "USA",
+    "region": "USA",
     "id": "8cd8a592-cffa-4c11-9bbd-7ae4ca90ddf4"
   },
   {
     "name": "Charlotte, N.C.",
-    "country": "USA",
+    "region": "USA",
     "id": "3762cdfb-f1e8-42dc-b449-a525bcab3a6e"
   },
   {
     "name": "Detroit, Mich.",
-    "country": "USA",
+    "region": "USA",
     "id": "27dcdffe-f010-4819-b333-fa899e11e145"
   },
   {
     "name": "El Paso, Tex.",
-    "country": "USA",
+    "region": "USA",
     "id": "5d3458ae-1db1-47e2-bc69-4c1091597ee3"
   },
   {
     "name": "Memphis, Tenn.",
-    "country": "USA",
+    "region": "USA",
     "id": "4f008b38-0ef0-4c26-af40-99d9c8bc08ef"
   },
   {
     "name": "Boston, Mass.",
-    "country": "USA",
+    "region": "USA",
     "id": "dcc9ab75-e44f-4003-bdd9-752718f8bebc"
   },
   {
     "name": "Seattle, Wash.",
-    "country": "USA",
+    "region": "USA",
     "id": "f4a57c16-7dd2-464a-9677-6ed8b30a7b68"
   },
   {
     "name": "Denver, Colo.",
-    "country": "USA",
+    "region": "USA",
     "id": "ae97e055-99b9-4941-954c-e4ae2e467dce"
   },
   {
     "name": "Washington, DC",
-    "country": "USA",
+    "region": "USA",
     "id": "f49c4fcc-b475-4586-9249-bae15fb81c53"
   },
   {
     "name": "Nashville-Davson, Tenn.",
-    "country": "USA",
+    "region": "USA",
     "id": "ab67d001-5a0a-40b7-af2d-694843ec2807"
   },
   {
     "name": "Baltimore, Md.",
-    "country": "USA",
+    "region": "USA",
     "id": "fbbe0e06-7d6f-4c17-886c-98dc34db9d98"
   },
   {
     "name": "Louisville-Jefferson County, Ky.",
-    "country": "USA",
+    "region": "USA",
     "id": "b70ea8a2-334f-4971-b61b-e7157fa4cc27"
   },
   {
     "name": "Portland, Ore.",
-    "country": "USA",
+    "region": "USA",
     "id": "bd655890-3412-46aa-bc78-d9b0b7da9470"
   },
   {
     "name": "Oklahoma City, Okla.",
-    "country": "USA",
+    "region": "USA",
     "id": "3ab8ed56-d9aa-41fc-8b49-ca61be976903"
   },
   {
     "name": "Milwaukee, Wis.",
-    "country": "USA",
+    "region": "USA",
     "id": "4c5b6548-d01f-402d-8769-4a21ccb7361f"
   },
   {
     "name": "Las Vegas, Nev.",
-    "country": "USA",
+    "region": "USA",
     "id": "5cf407f4-667f-468b-9322-87533a226112"
   },
   {
     "name": "Albuquerque, N.M.",
-    "country": "USA",
+    "region": "USA",
     "id": "d91889e9-c2e4-4749-9243-d37be2e3451f"
   },
   {
     "name": "Tucson, Ariz.",
-    "country": "USA",
+    "region": "USA",
     "id": "483d4178-6bca-4cbb-b46d-ee53ea1b3c98"
   },
   {
     "name": "Fresno, Calif.",
-    "country": "USA",
+    "region": "USA",
     "id": "86e8bf43-5516-4868-bec7-963bed419b76"
   },
   {
     "name": "Sacramento, Calif.",
-    "country": "USA",
+    "region": "USA",
     "id": "ee47fea1-2796-4826-b914-00ec80dcf5a7"
   },
   {
     "name": "Long Beach, Calif.",
-    "country": "USA",
+    "region": "USA",
     "id": "a12d4df0-0b3a-475f-9738-4cb18afd05c4"
   },
   {
     "name": "Kansas City, Mo.",
-    "country": "USA",
+    "region": "USA",
     "id": "d288a1ce-8771-46d1-8a62-715b43dff183"
   },
   {
     "name": "Mesa, Ariz.",
-    "country": "USA",
+    "region": "USA",
     "id": "82e6253f-f713-485a-b687-a3db48a19e1b"
   },
   {
     "name": "Virginia Beach, Va.",
-    "country": "USA",
+    "region": "USA",
     "id": "dff96635-bc76-46e3-9212-5887e11a0213"
   },
   {
     "name": "Atlanta, Ga.",
-    "country": "USA",
+    "region": "USA",
     "id": "1cdac3e6-d848-4e9d-a8b4-a1bad532cd63"
   },
   {
     "name": "Colorado Springs, Colo.",
-    "country": "USA",
+    "region": "USA",
     "id": "4e25c2a6-a4ec-418f-8679-746bf92f1abd"
   },
   {
     "name": "Raleigh, N.C.",
-    "country": "USA",
+    "region": "USA",
     "id": "47d5a32f-13db-400d-8a14-203470bf8cc3"
   },
   {
     "name": "Omaha, Nebr.",
-    "country": "USA",
+    "region": "USA",
     "id": "5dc3808b-2ac6-4adc-baaf-1812602708f0"
   },
   {
     "name": "Miami, Fla.",
-    "country": "USA",
+    "region": "USA",
     "id": "e5fbcb91-fdea-41c3-9d0a-925a74e4624f"
   },
   {
     "name": "Oakland, Calif.",
-    "country": "USA",
+    "region": "USA",
     "id": "9d3d319c-3019-40f0-837b-20a3571dd4f4"
   },
   {
     "name": "Tulsa, Okla.",
-    "country": "USA",
+    "region": "USA",
     "id": "b698f9b3-2f18-429a-b9e5-fa6beaefb50b"
   },
   {
     "name": "Minneapolis, Minn.",
-    "country": "USA",
+    "region": "USA",
     "id": "96df976a-14cb-435d-ae49-b2e74bdb1d08"
   },
   {
     "name": "Cleveland, Ohio",
-    "country": "USA",
+    "region": "USA",
     "id": "af00d489-1d0d-45cb-a3f8-1099babe3929"
   },
   {
     "name": "Wichita, Kans.",
-    "country": "USA",
+    "region": "USA",
     "id": "9c6787a5-5c8a-4a2b-9484-12b8a360b61e"
   },
   {
     "name": "Arlington, Tex.",
-    "country": "USA",
+    "region": "USA",
     "id": "fcb06a8e-ad6b-413d-adb0-c3dac0416965"
   },
   {
     "name": "Orlando, Fla.",
-    "country": "USA",
+    "region": "USA",
     "id": "a3352a85-c537-46bc-bc6c-efd4747d90f8"
   },
   {
     "name": "São Paulo, SP",
-    "country": "BRA",
+    "region": "BRA",
     "id": "e4c20d69-13ef-4cdb-a3bf-c7ade0220492"
   },
   {
     "name": "Rio de Janeiro, RJ",
-    "country": "BRA",
+    "region": "BRA",
     "id": "d05c0f51-3738-4332-9715-f7b6f93fff95"
   },
   {
     "name": "Salvador, BA",
-    "country": "BRA",
+    "region": "BRA",
     "id": "93ef8872-22e8-4537-b594-40377bd1198a"
   },
   {
     "name": "Brasília, DF",
-    "country": "BRA",
+    "region": "BRA",
     "id": "0d7f8b55-1527-4b04-a2ef-a9eb81acea13"
   },
   {
     "name": "Fortaleza, CE",
-    "country": "BRA",
+    "region": "BRA",
     "id": "7657b37d-ea47-47c4-9dd2-2126e69d5a02"
   },
   {
     "name": "Belo Horizonte, MG",
-    "country": "BRA",
+    "region": "BRA",
     "id": "34b2cfe5-0500-4431-b065-25c267ec6cbe"
   },
   {
     "name": "Manaus, AM",
-    "country": "BRA",
+    "region": "BRA",
     "id": "f7d96656-b710-44c3-aca8-d866270597c5"
   },
   {
     "name": "Curitiba, PR",
-    "country": "BRA",
+    "region": "BRA",
     "id": "6557adaf-b4ce-45d7-9ffb-a848908874c4"
   },
   {
     "name": "Recife, PE",
-    "country": "BRA",
+    "region": "BRA",
     "id": "975a2f07-0088-4484-8e37-2694ad864cda"
   },
   {
     "name": "Porto Alegre, RS",
-    "country": "BRA",
+    "region": "BRA",
     "id": "d2db3c1e-14d3-49e6-bd72-4200b550cea8"
   },
   {
     "name": "Belém, PA",
-    "country": "BRA",
+    "region": "BRA",
     "id": "681c9442-954c-4e84-bd07-a4cb70d78679"
   },
   {
     "name": "Goiânia, GO",
-    "country": "BRA",
+    "region": "BRA",
     "id": "71d26525-06ad-44aa-b791-bf1d7423a49b"
   },
   {
     "name": "Guarulhos, SP",
-    "country": "BRA",
+    "region": "BRA",
     "id": "316a6bb4-653f-4c1a-9df9-fd0dc2a9f000"
   },
   {
     "name": "Campinas, SP",
-    "country": "BRA",
+    "region": "BRA",
     "id": "30b654e4-38ff-4251-8e7a-fb7f215f1aba"
   },
   {
     "name": "São Gonçalo, RJ",
-    "country": "BRA",
+    "region": "BRA",
     "id": "6ad3efcf-1d06-4a16-b6b7-8ec214b30bc5"
   },
   {
     "name": "São Luís, MA",
-    "country": "BRA",
+    "region": "BRA",
     "id": "49618771-e35a-4063-8aa4-eaeaf4683167"
   },
   {
     "name": "Maceió, AL",
-    "country": "BRA",
+    "region": "BRA",
     "id": "871c0050-2e61-4d81-941c-3ecb4fa328b1"
   },
   {
     "name": "Duque de Caxias, RJ",
-    "country": "BRA",
+    "region": "BRA",
     "id": "cea5bc25-10d7-49ec-9710-4834e7f4de5f"
   },
   {
     "name": "Nova Iguaçu, RJ",
-    "country": "BRA",
+    "region": "BRA",
     "id": "8111232e-25f1-4d97-baee-73c94c8a0e20"
   },
   {
     "name": "Natal, RN",
-    "country": "BRA",
+    "region": "BRA",
     "id": "22ce0265-5ccd-4564-9417-35145d939f2c"
   },
   {
     "name": "Teresina, PI",
-    "country": "BRA",
+    "region": "BRA",
     "id": "61deb2ed-9ad5-4b85-bc2a-3f95f3919cd2"
   },
   {
     "name": "Campo Grande, MS",
-    "country": "BRA",
+    "region": "BRA",
     "id": "06be51cc-bb53-41d8-a129-8ba2c2c038fa"
   },
   {
     "name": "São Bernardo do Campo, SP",
-    "country": "BRA",
+    "region": "BRA",
     "id": "77268878-a602-42e4-a316-aff45524e1bc"
   },
   {
     "name": "Osasco, SP",
-    "country": "BRA",
+    "region": "BRA",
     "id": "7994b0a5-9019-4a7a-9e6f-168861fe0e56"
   },
   {
     "name": "João Pessoa, PA",
-    "country": "BRA",
+    "region": "BRA",
     "id": "decd90b3-7ada-45a1-8060-20035ad81ae0"
   },
   {
     "name": "Jaboatão dos Guararapes, PE",
-    "country": "BRA",
+    "region": "BRA",
     "id": "64c47728-7e65-45eb-a97e-14061f9b3d7d"
   },
   {
     "name": "Santo André, SP",
-    "country": "BRA",
+    "region": "BRA",
     "id": "adeeae10-b112-4057-b29b-8a5ababdc055"
   },
   {
     "name": "Uberlândia, MG",
-    "country": "BRA",
+    "region": "BRA",
     "id": "61049fba-70db-4c26-b3a0-ad5543739a3c"
   },
   {
     "name": "Contagem, MG",
-    "country": "BRA",
+    "region": "BRA",
     "id": "6e52f06e-5115-43d4-ae98-1f9fcaa26463"
   },
   {
     "name": "São José dos Campos, SP",
-    "country": "BRA",
+    "region": "BRA",
     "id": "270414dc-9f57-4e6b-b8cd-2c8bf335e9e9"
   },
   {
     "name": "Feira de Santana, BA",
-    "country": "BRA",
+    "region": "BRA",
     "id": "1a5f585f-fade-45eb-81ed-0ed34da26cb2"
   },
   {
     "name": "Sorocaba, SP",
-    "country": "BRA",
+    "region": "BRA",
     "id": "68eb4965-432e-428a-afc8-27963658d35e"
   },
   {
     "name": "Ribeirão Preto, SP",
-    "country": "BRA",
+    "region": "BRA",
     "id": "872c7635-03a9-4da4-b6d2-b15647a0847e"
   },
   {
     "name": "Cuiabá, MT",
-    "country": "BRA",
+    "region": "BRA",
     "id": "ccbbab16-bdd2-4067-9cb4-b5e7f80058f3"
   },
   {
     "name": "Aracaju, SE",
-    "country": "BRA",
+    "region": "BRA",
     "id": "874eb6a5-c1d1-48d3-9c90-4fe398f027e0"
   },
   {
     "name": "Juiz de Fora, MG",
-    "country": "BRA",
+    "region": "BRA",
     "id": "8c28486e-8e6d-4b52-bc09-1f62c2b44926"
   },
   {
     "name": "Aparecida de Goiânia, GO",
-    "country": "BRA",
+    "region": "BRA",
     "id": "7c986f86-a7d3-414b-9529-a7ae97133aec"
   },
   {
     "name": "Londrina, PR",
-    "country": "BRA",
+    "region": "BRA",
     "id": "93fa4cba-0093-46af-96d2-6a28cd49596f"
   },
   {
     "name": "Ananindeua, PA",
-    "country": "BRA",
+    "region": "BRA",
     "id": "249fa148-1e82-418d-b712-7bc5ebd5ca91"
   },
   {
     "name": "Belford Roxo, RJ",
-    "country": "BRA",
+    "region": "BRA",
     "id": "cc92fb0c-11c1-4f3c-b8bb-82bfa4a602c2"
   },
   {
     "name": "Joinville, SC",
-    "country": "BRA",
+    "region": "BRA",
     "id": "a0495c07-03ad-4830-9436-6e76296fe503"
   },
   {
     "name": "Niterói, RJ",
-    "country": "BRA",
+    "region": "BRA",
     "id": "e83d8cf5-7312-4a74-8186-e4dfd317cdd8"
   },
   {
     "name": "São João de Meriti, RJ",
-    "country": "BRA",
+    "region": "BRA",
     "id": "6a555600-94ed-46d7-bb84-cd617c499c02"
   },
   {
     "name": "Betim, MG",
-    "country": "BRA",
+    "region": "BRA",
     "id": "0973a8d5-c01f-4347-853e-b9d0afb7d115"
   },
   {
     "name": "Campos dos Goitacazes, RJ",
-    "country": "BRA",
+    "region": "BRA",
     "id": "e901ae01-99ae-4d4f-9f08-298dc0d6cc95"
   },
   {
     "name": "Santos, SP",
-    "country": "BRA",
+    "region": "BRA",
     "id": "75ea1271-fde5-484c-a946-49408163f020"
   },
   {
     "name": "Mauá, SP",
-    "country": "BRA",
+    "region": "BRA",
     "id": "91dca1e9-4a63-44bf-9bda-4f4c23170399"
   },
   {
     "name": "São José do Rio Preto, SP",
-    "country": "BRA",
+    "region": "BRA",
     "id": "2e81849a-8e29-45c1-8b31-1d03d4237dc3"
   },
   {
     "name": "Vila Velha, ES",
-    "country": "BRA",
+    "region": "BRA",
     "id": "e9727cc5-c880-4a40-b40d-cbd6ec72427c"
   },
   {
     "name": "Caxias do Sul, RS",
-    "country": "BRA",
+    "region": "BRA",
     "id": "e44df1df-33f0-41e7-8944-669b78e74faa"
   },
   {
     "name": "Florianópolis, SC",
-    "country": "BRA",
+    "region": "BRA",
     "id": "7a786f2b-5532-4576-9365-972796376340"
   }
 ]

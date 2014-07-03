@@ -176,21 +176,12 @@
   // TODO rethink set selection.
   var datasetStream = Rx.Observable.fromEvent($datasets, 'click')
     .map(function(e) {
-      return $(e.target).data('dataset');
+      return $(e.target).data('region');
     })
-    .map(function(setName) {
-      if(setName === "USA") {
-        return _.filter(cities, function(city) {
-          return city.country === "USA";
-        });
-      } else if(setName === "BRA") {
-        return _.filter(cities, function(city) {
-          return city.country === "BRA";
-        });
-      }
-    })
-    .map(function(set) {
-      return shuffle(set);
+    .map(function(region) {
+      return _.filter(cities, function(city) {
+        return city.region === region;
+      });
     });
 
   datasetStream.subscribe(function(set) {
