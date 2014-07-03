@@ -38,6 +38,32 @@
     return "img/cities/" + city.id + ".png";
   };
 
+  /* CLASS
+   *******/
+
+  var Deck = function(arr) {
+    var arrShuffled = shuffle(arr);
+    return {
+      arr: arrShuffled,
+      draw: function(n) {
+        var ret = this.arr.slice(this.index, this.index + n);
+        if(this.index + n >= this.arr.length) {
+          ret = ret.concat(this.arr.slice(0, n - (this.arr.length - this.index)))
+        }
+
+        this.index += n;
+        if(this.index >= this.arr.length) {
+          this.loops += Math.floor(this.index / arr.length);
+          this.index %= arr.length;
+        }
+
+        return ret;
+      },
+      index: 0,
+      loops: 0
+    }
+  };
+
 
   /* JQUERY
    ********/
@@ -50,11 +76,12 @@
   var $choice3 = $('#choice-3');
   var $mapImg = $('#map-img');
   var $imgLoader = $('#img-loader');
-  var $refreshButton = $('.refresh-button');
+  var $restartButton = $('.restart-button');
 
   var $datasets = $('.datasets button');
   var $init = $('.init');
   var $game = $('.game');
+  var $fin = $('.fin');
 
   var elementFromCityId = function (cityId) {
     return $buttons.filter(function (i, el) {
@@ -66,7 +93,7 @@
   /* RX.JS
    *******/
 
-  var dataset = new Rx.BehaviorSubject(cities);
+  var dataset = new Rx.BehaviorSubject(new Deck(cities));
 
   var resultStream = Rx.Observable.fromEvent($buttons, 'click')
     .map(function (e) {
@@ -81,6 +108,11 @@
       };
     });
 
+  resultStream = resultStream.scan({total: 0}, function(acc, result) {
+    result.total = acc.total + 1;
+    return result;
+  });
+
   var correctStream = resultStream.scan(0, function (acc, result) {
     return acc + (result.correctness ? 1 : 0);
   });
@@ -88,8 +120,8 @@
     $correct.text(correct);
   });
 
-  var totalStream = resultStream.scan(0, function (acc) {
-    return acc + 1;
+  var totalStream = resultStream.map(function (res) {
+    return res.total;
   });
   totalStream.subscribe(function (total) {
     $total.text(total);
@@ -109,29 +141,44 @@
   var refreshStream = resultStream.map(function(){return DELAY});
 
   var refresh = function(delay) {
-    var possible = sample(dataset.value, 3);
-    var chosen = sample(possible);
+    if(dataset.value.loops > 0){
+      setTimeout(function() {
+        $game.hide();
+        $fin.show();
+      }, delay);
+    } else {
+      var possible = dataset.value.draw(3);
+      var chosen = sample(possible);
 
-    var url = buildUrl(chosen);
-    $imgLoader.attr('src', url);
+      var url = buildUrl(chosen);
+      $imgLoader.attr('src', url);
 
-    setTimeout(function() {
-      $buttons.removeClass("guess-correct guess-wrong").attr('disabled', false);
-      $choice1.text(possible[0].name).data('city-id', possible[0].id);
-      $choice2.text(possible[1].name).data('city-id', possible[1].id);
-      $choice3.text(possible[2].name).data('city-id', possible[2].id);
-      $mapImg.attr('src', url).data('city-id', chosen.id);
-    }, delay);
+      setTimeout(function () {
+        $buttons.removeClass("guess-correct guess-wrong").attr('disabled', false);
+        $choice1.text(possible[0].name).data('city-id', possible[0].id);
+        $choice2.text(possible[1].name).data('city-id', possible[1].id);
+        $choice3.text(possible[2].name).data('city-id', possible[2].id);
+        $mapImg.attr('src', url).data('city-id', chosen.id);
+      }, delay);
+    }
   };
 
   refreshStream.subscribe(refresh);
 
+  /* FIN */
+  var restartStream = Rx.Observable.fromEvent($restartButton, 'click');
+
+  restartStream.subscribe(function() {
+    window.location.reload();
+  });
+
   /* INIT */
-  // TODO cleanup.
+  // TODO rethink set selection.
   var datasetStream = Rx.Observable.fromEvent($datasets, 'click')
     .map(function(e) {
       return $(e.target).data('dataset');
-    }).map(function(setName) {
+    })
+    .map(function(setName) {
       if(setName === "USA") {
         return _.filter(cities, function(city) {
           return city.country === "USA";
@@ -141,10 +188,13 @@
           return city.country === "BRA";
         });
       }
+    })
+    .map(function(set) {
+      return shuffle(set);
     });
 
   datasetStream.subscribe(function(set) {
-    dataset.onNext(set);
+    dataset.onNext(new Deck(set));
   });
 
   datasetStream.subscribe(function() {
